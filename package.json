@@ -10,8 +10,9 @@
     "react-icons": "^2.2.5"
   },
   "devDependencies": {
-    "react-scripts": "1.0.5",
-    "@kadira/storybook": "^2.21.0"
+    "@kadira/storybook": "^2.21.0",
+    "gh-pages": "^1.0.0",
+    "react-scripts": "1.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,6 +20,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy:storybook": "gh-pages -d storybook-static"
   }
 }
